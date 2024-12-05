@@ -7,14 +7,12 @@ var firstList = arrayListOf<Int>()
 var secondList = arrayListOf<Int>()
 
 fun main() {
-    readFileAsLinesUsingUseLines("C:/Users/TimoRudersdorf/Documents/adventofcode/numberlists.txt")
+    readFileAsLinesUsingUseLines("numberlists.txt")
     var sumDistance = 0
     for (i in firstList.indices) {
         println(i)
-//        println(" " + firstList[i] + "  " + secondList[i])
         val distance = firstList[i] - secondList[i]
         var absDistance = abs(distance)
-//        println(" Dist " + abs(distance))
         sumDistance += absDistance
     }
     println("Sum " + sumDistance)

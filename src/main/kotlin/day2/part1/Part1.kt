@@ -7,7 +7,7 @@ val boolList = ArrayList<Boolean>()
 
 
 fun main() {
-    readFileAsLinesUsingUseLines("C:/Users/TimoRudersdorf/Documents/adventofcode/ReportsDay2.txt")
+    readFileAsLinesUsingUseLines("/ReportsDay2.txt")
     val count = boolList.count { it }
     println(count)
 }
@@ -27,16 +27,13 @@ fun readFileAsLinesUsingUseLines(fileName: String): Unit
 
                 val i1 = toIntArray[i]
                 val i2 = toIntArray[i + 1]
-//                println("" + i1 + " - " + i2 + " = " + (i1 - i2))
                 ergList.add(i1 -i2)
-                println(ergList)
 
 
             }
         }
         boolList.add(ergList.all { it in 1..3 })
         boolList.add(ergList.all { it in -1 downTo -3 })
-        println(split)
 
     }
 }

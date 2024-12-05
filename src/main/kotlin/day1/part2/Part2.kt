@@ -6,11 +6,10 @@ var firstList = arrayListOf<Int>()
 var secondList = arrayListOf<Int>()
 
 fun main() {
-    readFileAsLinesUsingUseLines("C:/Users/TimoRudersdorf/Documents/adventofcode/numberlists.txt")
+    readFileAsLinesUsingUseLines("numberlists.txt")
     var sumDistance = 0
     for (item in firstList) {
         val count = secondList.count { it == item }
-        println("" + item + " ist " + count + " vorhanden")
         val i = count * item
         sumDistance += i
 
