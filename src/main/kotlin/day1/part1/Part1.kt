@@ -15,7 +15,7 @@ fun main() {
         var absDistance = abs(distance)
         sumDistance += absDistance
     }
-    println("Sum " + sumDistance)
+    println("Sum $sumDistance")
 }
 
 fun readFileAsLinesUsingUseLines(fileName: String): Unit

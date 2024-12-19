@@ -14,7 +14,7 @@ fun main() {
         sumDistance += i
 
     }
-    println("Sum " + sumDistance)
+    println("Sum $sumDistance")
 }
 
 fun readFileAsLinesUsingUseLines(fileName: String): Unit
